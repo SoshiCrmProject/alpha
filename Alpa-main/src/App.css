@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: #BDBDBD;
+    color: white;
+}
+
+.overflow-auto::-webkit-scrollbar,
+.overflow-y-auto::-webkit-scrollbar,
+.overflow-x-auto::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.overflow-auto::-webkit-scrollbar-track,
+.overflow-y-auto::-webkit-scrollbar-track,
+.overflow-x-auto::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb,
+.overflow-y-auto::-webkit-scrollbar-thumb,
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background-color: #d4d3d3;
+    border-radius: 15px;
+}
+
+.signup_bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.66)), url('./assets/signup_bg.jpg');
+}
+
+.signup_bg input[type="text"],
+.signup_bg input[type="email"],
+.signup_bg input[type="password"] {
+    background-color: transparent;
+    border: 1px solid #BDBDBD;
+    outline: none;
+    padding: 8px 18px;
+    border-radius: 9px;
+    margin-top: 4px;
+    width: 100%;
+}
+
+.signup_bg input::placeholder {
+    font-size: 0.8rem;
+}
+
+.headerItems li {
+    margin: 0px 10px;
+    font-size: 0.95rem;
+}
+
+.sidenav ul li {
+    margin: 12px 0;
+    margin-left: 5px;
+}
+
+.sidenav h3 {
+    padding-left: 15px;
+    margin-top: 6px;
+}
+
+.sidenav ul li a {
+    font-size: 0.9rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 65px;
+}
+
+.sidenav:hover .mainSideNav::-webkit-scrollbar {
+    display: block;
+}
+
+.mainSideNav {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90vh;
+}
+
+.mainSideNav::-webkit-scrollbar {
+    width: 8px;
+    display: none;
+}
+
+.mainSideNav::-webkit-scrollbar-track {
+    background-color: transparent;
+
+}
+
+.mainSideNav::-webkit-scrollbar-thumb {
+    background-color: #d4d3d3;
+    border-radius: 15px;
+}
+
+.cameraBtn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 70px;
+    opacity: 0;
+}
+
+.profileLogin input,
+.AccInfo input,
+.AccInfo textarea,
+.profileInfo input,
+.profileInfo textarea {
+    background-color: #f9f9f9;
+    border: 1px solid #BDBDBD;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.profileLogin label,
+.AccInfo label,
+.profileInfo label {
+    margin-bottom: 5px;
+}
+
+.AccInfo div {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+#conversations,
+#settings {
+    margin-right: 10px;
+}
+
+.expense_allocation_table th {
+    font-weight: 500;
+    font-size: 0.8rem;
+    border-right: 1px solid #bdbdbd61;
+    padding: 3px 5px;
+}
+
+.expense_allocation_table th:last-child {
+    border-right: none;
+}
+
+.service_accounts_table th {
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-right: 1px solid #bdbdbd61;
+    padding: 3px 5px;
+}
+
+.service_accounts_table th:last-child {
+    border-right: none;
+}
+
+.service_accounts_table tr {
+    border-bottom: 1px solid #bdbdbd4f;
+}
+
+.service_accounts_table tr:last-child {
+    border-bottom: none;
+}
+
+.service_accounts_table tr td {
+    border-right: 1px solid #bdbdbd4f;
+}
+
+.service_accounts_table tr td:last-child {
+    border-right: none;
+}
+
+.service_accounts_table tr td {
+    padding: 5px 5px;
+}
+
+
+.uomListTable th {
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-right: 1px solid #bdbdbd61;
+    padding: 3px 5px;
+}
+
+.uomListTable th:last-child {
+    border-right: none;
+}
+
+.uomListTable tr {
+    border-bottom: 1px solid #bdbdbd4f;
+}
+
+.uomListTable tr:last-child {
+    border-bottom: none;
+}
+
+.uomListTable td {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 8px;
+}
+
+.wbs_table th {
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+
+.wbs_table td {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+
+.wbs_table tr {
+    border-bottom: 1px solid #bdbdbd4f;
+}
+
+.wbs_table tr:last-child {
+    border-bottom: none;
+}
+
+.project_dates_table th {
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+
+.project_dates_table th:first-child {
+    padding-right: 0px;
+}
+
+.project_dates_table td {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.project_dates_table tr {
+    border-bottom: 1px solid #bdbdbd4f;
+}
+
+.project_dates_table tr:last-child {
+    border-bottom: none;
+}
+
+.project_dates_table tr td:first-child {
+    padding-right: 0px;
+}
+
+.project_dates_table input {
+    width: 16px;
+    height: 16px;
+}
+
+.project_default_table th,
+.project_types_table th {
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    text-align: left;
+}
+
+.project_default_table td,
+.project_types_table td {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+}
+
+.project_default_table td:last-child,
+.project_types_table td:last-child {
+    justify-content: end;
+}
+
+.project_default_table tr,
+.project_types_table tr {
+    border-bottom: 1px solid #bdbdbd4f;
+}
+
+.project_default_table tr:last-child,
+.project_types_table tr:last-child {
+    border-bottom: none;
+}
+
+.migrate p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar li {
+    margin: 8px 0;
+}
+
+.sidebar li a {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.sidebar li a svg {
+    width: 22px;
+    height: 22px;
+}
+
+.sidebarSettings li {
+    margin: 6px 0;
+}
+
+.sidebarSettings li a {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 8px 13px;
+    font-weight: 500;
+}
+
+.home_project_table th {
+    font-weight: 500;
+    font-size: 0.88rem;
+    padding: 7px 10px;
+    color: #737373;
+}
+
+.home_project_table td {
+    font-size: 0.8rem;
+    padding: 7px 11px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.apexcharts-legend {
+    max-height: 100% !important;
+}
+
+.project_desc_table th {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.project_desc_table td {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.home_page_table th {
+    font-weight: 600;
+    font-size: 0.89rem;
+    padding: 4px 10px;
+}
+
+.home_page_table th:first-child {
+    padding-left: 5px;
+}
+
+.home_page_table th:last-child {
+    padding-right: 5px;
+}
+
+.home_page_table td {
+    font-size: 0.8777rem;
+    padding: 8px 10px;
+}
+
+.filtered_table th {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.filtered_table tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filtered_table td {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+}
+
+.rbc-toolbar {
+    background: #1C2852;
+    color: white;
+    padding: 6px;
+    border-radius: 5px 5px 0 0;
+    font-size: 0.9rem;
+    margin-bottom: 1px;
+}
+
+.rbc-btn-group button {
+    background: white;
+    border: 1px solid transparent;
+    margin: 0 7px;
+    padding: 6px 12px;
+    border-radius: 20px !important;
+}
+
+.small_calendar .rbc-btn-group:last-child {
+    display: none;
+}
+
+.small_calendar .rbc-btn-group:first-child button:first-child {
+    display: none;
+}
+
+.small_calendar button {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+}
+
+.small_calendar .rbc-toolbar {
+    background-color: rgb(69, 65, 65);
+}
+
+@media screen and (min-width: 1024px) {
+    .headerItems {
+        margin-inline-start: 159px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .projectNav a {
+        padding: 10px 0px;
+    }
+
+    .headerItems li a {
+        font-size: 0.9rem !important;
+    }
+
+    .headerItems li {
+        margin: 8px 0;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .headerItems li a {
+        font-size: 0.8rem;
+    }
+}
